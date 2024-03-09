@@ -31,5 +31,5 @@ NOTES:
 coeff_table |> write_csv(here::here("objects", "coeff_table.csv"))
 
 # There may be situations where you need access to the model itself in index.qmd.  If so, model objects should be saved with saveRDS()
-m |> saveRDS(here::here("./notebooks/objects", "lm.rds"))
+m |> saveRDS(here::here("objects", "lm.rds"))
 ```
