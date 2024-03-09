@@ -60,7 +60,6 @@ p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
 $$ 
 
 
-
 ### References
 
 We can use cite relevant research in multiple formats.  The two most common are: 
