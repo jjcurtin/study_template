@@ -266,10 +266,10 @@ F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
 </ul>
 <div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># can save tidied tables of results as csv.  This is preferred method for saving tables and we believe that saving the tables is likely the best choice for later access to results in index.qmd</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>coeff_table <span class="sc">|&gt;</span> <span class="fu">write_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"./notebooks/objects"</span>, <span class="st">"coeff_table.csv"</span>))</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>coeff_table <span class="sc">|&gt;</span> <span class="fu">write_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"objects"</span>, <span class="st">"coeff_table.csv"</span>))</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># There may be situations where you need access to the model itself in index.qmd.  If so, model objects should be saved with saveRDS()</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>m <span class="sc">|&gt;</span> <span class="fu">saveRDS</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"./notebooks/objects"</span>, <span class="st">"lm.rds"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>m <span class="sc">|&gt;</span> <span class="fu">saveRDS</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"objects"</span>, <span class="st">"lm.rds"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
