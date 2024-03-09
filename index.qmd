@@ -71,7 +71,7 @@ p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
 $$ 
 
 
-### Citations References
+### Citations & References
 
 We can use cite relevant research in multiple formats.  The two most common are: 
 
