@@ -41,12 +41,23 @@ editor_options:
 
 You can write your text using markdown.  
 
-Top level section headings use ##
+- Top level section headings use ## because # is reserved for the manuscript title. 
+- APA (and other?) formats support ##, ###, and #### at least.
 
 
-### Sub-heading Demo
+### Sub-heading - level 3
 
-You can use sub-headings in your paper as well
+This is the ### level
+
+
+#### Sub-heading - level 4
+
+This is the #### level
+
+
+##### Sub-heading - level 5
+
+This is the ##### level
 
 
 ### Symbols and Equations
@@ -60,14 +71,7 @@ p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
 $$ 
 
 
-### Data Figures
-
-Figures are also generally created in separate notebooks and embedded into your manuscript.
-
-{{< embed notebooks/fig1.qmd#fig-1 >}}
-
-
-### References
+### Citations References
 
 We can use cite relevant research in multiple formats.  The two most common are: 
 
@@ -81,11 +85,55 @@ Although we don't do this regularly I think, if needed you can reference figures
 
 ## Methods
 
+This is the methods section.
+
+
+## Results
+
+Results include
+
+- Markdown text
+- Figures from data
+- Figures from images (maybe included table images)
+- Analysis output (i.e. statistics)
+
+We demonstrate each (other than markdown text, which you should know!) below
+
+
+### Data Figures
+
+Figures are also generally created in separate notebooks and embedded into your manuscript.
+
+{{< embed notebooks/fig1.qmd#fig-1 >}}
+
+### Figures from images
+
+### Tables
+
+We create tables using the kableExtra package.  We are working on the optimal method to embed these from notebooks.  It may be to save the tables as high res image files and then embed those images.  Stay tuned.
+
+Alternatively, this is an example of a simple table that is hard-coded using markdown table format.  We don't recommend this for tables built from data. Tables values should come directly from data so they don't need to be typed in and will update if your data change.  However, you may have other uses for simple tables where this method is helpful.
+
+| Name                | Year |
+|---------------------|------|
+| Current             | 2021 |
+| Teneguía            | 1971 |
+| Nambroque           | 1949 |
+| El Charco           | 1712 |
+| Volcán San Antonio  | 1677 |
+| Volcán San Martin   | 1646 |
+| Tajuya near El Paso | 1585 |
+| Montaña Quemada     | 1492 |
+
+: Recent historic eruptions on La Palma {#tbl-history}
+
+### Analysis Results
+
 To add results that are not figures or tables, you will need to open the objects you saved from these analyses.  See lm.qmd as an example. Generally you will open csv files that contain tidied results. For example
 ```{r}
 library(tidyverse)
 
-coeffs <- read_csv(here::here("notebooks/objects/coeff_table.csv"),
+coeffs <- read_csv(here::here("objects/coeff_table.csv"),
                    col_types = cols())
 ```
 
