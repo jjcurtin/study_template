@@ -5,32 +5,61 @@ and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
 <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
 
 <front>
+<journal-meta>
+<journal-id></journal-id>
+
+<journal-title-group>
+<journal-title>Journal of Important Findings</journal-title>
+</journal-title-group>
+<issn></issn>
+
+<publisher>
+<publisher-name></publisher-name>
+</publisher>
+</journal-meta>
 
 
 <article-meta>
 
 
 <title-group>
-<article-title>Study_test</article-title>
+<article-title>A Super Cool Study</article-title>
 </title-group>
 
 <contrib-group>
-<contrib contrib-type="author" corresp="yes">
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">0000-0002-7859-8394</contrib-id>
 <name>
-<surname>Jones</surname>
-<given-names>Norah</given-names>
+<surname>Student</surname>
+<given-names>Josephine</given-names>
 </name>
-<string-name>Norah Jones</string-name>
+<string-name>Josephine Student</string-name>
 
-<role vocab="https://credit.niso.org" vocab-term="writing – original
-draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
 <xref ref-type="aff" rid="aff-1">a</xref>
-<xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0002-3286-938X</contrib-id>
+<name>
+<surname>Curtin</surname>
+<given-names>John J.</given-names>
+</name>
+<string-name>John J. Curtin</string-name>
+
+<email>jjcurtin@wisc.edu</email>
+<role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+<role vocab="https://credit.niso.org" vocab-term="project
+administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project
+administration</role>
+<role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+<role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="corresp" rid="cor-2">&#x002A;</xref>
 </contrib>
 </contrib-group>
 <aff id="aff-1">
 <institution-wrap>
-<institution>The University</institution>
+<institution>Department of Psychology, University of
+Wisconsin-Madison</institution>
 </institution-wrap>
 
 
@@ -41,10 +70,14 @@ draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-
 
 </aff>
 <author-notes>
-<corresp id="cor-1"></corresp>
+<corresp id="cor-2">jjcurtin@wisc.edu</corresp>
 </author-notes>
 
-
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2024-03-09">
+<year>2024</year>
+<month>3</month>
+<day>9</day>
+</pub-date>
 
 
 
@@ -55,6 +88,14 @@ draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-
 <history></history>
 
 
+<abstract>
+<p>This study found some pretty cool results that have both high impact
+and important clinical implications. For example …</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Substance use disorders</kwd>
+<kwd>Precision mental health</kwd>
+</kwd-group>
 
 
 
@@ -64,17 +105,77 @@ draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-
 </front>
 
 <body>
-<sec id="section">
-  <title>Section</title>
-  <p>This is a simple placeholder for the manuscript’s main document
-  (<xref alt="Knuth 1984" rid="ref-knuth84" ref-type="bibr">Knuth
-  1984</xref>).</p>
+<sec id="introduction">
+  <title>Introduction</title>
+  <p>You can write your text using markdown.</p>
+  <p>Top level section headings use ##</p>
+  <sec id="sub-heading-demo">
+    <title>Sub-heading Demo</title>
+    <p>You can use sub-headings in your paper as well</p>
+  </sec>
+  <sec id="symbols-and-equations">
+    <title>Symbols and Equations</title>
+    <p>You can use quarto inline or display math equations as needed.
+    Quarto provides
+    <ext-link ext-link-type="uri" xlink:href="https://quarto.org/docs/authoring/markdown-basics.html#equations">details</ext-link>
+    on the use of these equations.</p>
+    <p>For example <inline-formula><alternatives>
+    <tex-math><![CDATA[x]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>x</mml:mi></mml:math></alternatives></inline-formula>
+    and <inline-formula><alternatives>
+    <tex-math><![CDATA[y]]></tex-math>
+    <mml:math display="inline" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi>y</mml:mi></mml:math></alternatives></inline-formula>
+    are two variables. And here is an important formula:</p>
+    <p><disp-formula><alternatives>
+    <tex-math><![CDATA[
+    p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+    ]]></tex-math>
+    <mml:math display="block" xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>p</mml:mi><mml:mrow><mml:mo stretchy="true" form="prefix">(</mml:mo><mml:mi>x</mml:mi><mml:mo stretchy="true" form="postfix">)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>λ</mml:mi></mml:mrow></mml:msup><mml:msup><mml:mi>λ</mml:mi><mml:mi>x</mml:mi></mml:msup></mml:mrow><mml:mrow><mml:mi>x</mml:mi><mml:mi>!</mml:mi></mml:mrow></mml:mfrac></mml:mrow></mml:math></alternatives></disp-formula></p>
+  </sec>
+  <sec id="data-figures">
+    <title>Data Figures</title>
+    <p>Figures are also generally created in separate notebooks and
+    embedded into your manuscript.</p>
+    <fig id="fig-1">
+      <caption><p>Figure 1: A Basic Barplot Figure</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/notebooks-fig1-fig-1-output-1.png" />
+    </fig>
+  </sec>
+  <sec id="references">
+    <title>References</title>
+    <p>We can use cite relevant research in multiple formats. The two
+    most common are:</p>
+    <list list-type="bullet">
+      <list-item>
+        <p>Knuth
+        (<xref alt="1984" rid="ref-knuth84" ref-type="bibr">1984</xref>)
+        concluded something.
+        </p>
+      </list-item>
+      <list-item>
+        <p>These are the
+        conclusions(<xref alt="Knuth 1984" rid="ref-knuth84" ref-type="bibr">Knuth
+        1984</xref>).</p>
+      </list-item>
+    </list>
+    <p>Article references are stored in a .bib file using betterbibtex
+    (BBT) format. We create these references in Zotero collections.</p>
+    <p>Although we don’t do this regularly I think, if needed you can
+    reference figures elsewhere using the @ symbol. Here is a reference
+    to <xref alt="Figure 1" rid="fig-1">Figure 1</xref></p>
+  </sec>
+</sec>
+<sec id="methods">
+  <title>Methods</title>
+</sec>
+<sec id="discussion">
+  <title>Discussion</title>
 </sec>
 </body>
 
 <back>
 <ref-list>
-  <title></title>
+  <title>References</title>
   <ref id="ref-knuth84">
     <element-citation publication-type="article-journal">
       <person-group person-group-type="author">
@@ -97,7 +198,7 @@ draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-
 </ref-list>
 </back>
 
-<sub-article article-type="notebook" id="nb-4-nb-1">
+<sub-article article-type="notebook" id="nb-2-nb-1">
 <front-stub>
 <title-group>
 <article-title>Figure 1</article-title>
