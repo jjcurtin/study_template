@@ -1,5 +1,5 @@
 ---
-title: "Smart Digital Therapeutics for Alcohol Use Disorder: Algorithms for Prediction and Adaptive Intervention" 
+title: "An Engaging Talk" 
 author: "John J. Curtin, Ph.D."
 institute: "University of Wisconsin-Madison"
 format: 
