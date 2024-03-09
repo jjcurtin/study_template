@@ -1,2 +1,2 @@
 quarto publish gh-pages
-rm -r _manscript
+rm -r _manuscript
