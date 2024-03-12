@@ -6,7 +6,7 @@ editor_options:
 ---
 
 ```{r}
-library(tidyverse, quietly = TRUE, warn.conflicts = FALSE)
+library(tidyverse)
 theme_set(theme_classic())
 ```
 
