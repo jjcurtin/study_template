@@ -110,7 +110,7 @@ Figures are also generally created in separate notebooks and embedded into your 
 
 Images from figures can be included using the standard code to insert image files.  These images should generally be saved in the image folder at the root of the study template by convention.  The quarto website provides [additional details](https://quarto.org/docs/authoring/figures.html)
 
-![Arc Logo](images/arc_logo.png)
+![ARC Logo](images/arc_logo.png){#fig-2}
 
 ### Tables
 
