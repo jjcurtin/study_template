@@ -6,10 +6,17 @@ editor_options:
 ---
 
 ```{r}
+# set up environment
+options(conflicts.policy = "depends.ok")
 library(tidyverse)
-theme_set(theme_classic())
-```
+theme_set(theme_classic()) 
 
+# Paths
+# not needed for this demo but included as example for lab scripts
+devtools::source_url("https://github.com/jjcurtin/lab_support/blob/main/format_path.R?raw=true")
+path_models <- format_path("studydata/risk/models/ema")
+path_data_shared <- format_path("studydata/risk/data_processed/shared")
+path_data_ema <- format_path("studydata/risk/data_processed/ema")
 ```{r}
 
 # Create data
