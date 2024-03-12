@@ -7,6 +7,11 @@ format:
     scrollable: true
     chalkboard: true
     css: slides.css
+title-slide-attributes:
+  data-background-image: https://github.com/jjcurtin/lectures_science/blob/main/images/smartphone_know_you.png?raw=true
+  data-background-size: 35%
+  data-background-repeat: no
+  data-background-position: left 10% bottom 10%
 fig-cap-location: top
 editor_options: 
   chunk_output_type: console
