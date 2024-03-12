@@ -108,6 +108,10 @@ Figures are also generally created in separate notebooks and embedded into your 
 
 ### Figures from images
 
+Images from figures can be included using the standard code to insert image files.  These images should generally be saved in the image folder at the root of the study template by convention.  The quarto website provides [additional details](https://quarto.org/docs/authoring/figures.html)
+
+![Arc Logo](images/arc_logo.png)
+
 ### Tables
 
 We create tables using the kableExtra package.  We are working on the optimal method to embed these from notebooks.  It may be to save the tables as high res image files and then embed those images.  Stay tuned.
