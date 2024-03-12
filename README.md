@@ -8,7 +8,7 @@ This is a template for generating a repo for a Quarto project for a study that w
 - slide set(s) for talks based on the study
 
 
-It is based off of a tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html) but expanded to include linked posters and talks and with some customizations for our workflow and preferences.
+It is based loosely off of a tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html) but expanded to include linked posters and talks and with some customizations for our workflow and preferences.
 
 ## Introductory Reading
 
@@ -37,29 +37,34 @@ If you plan to make slide sets, you can also read docs on making slides in quart
 6.  Begin working on your new manuscript!  
   - The main manuscript is saved as index.qmd.  
   - Additional quarto notebooks are saved in the /notebooks folder
-  - qmd files for posters are saved individual folders within _presentations folder
+  - qmd files for posters are saved in individual folders within _presentations folder
   - qmd files for slide sets for talks are saved in individual folders within _presentations 
 
 
 ## Publishing Your Manuscript 
 
 
-Github is a good choice to publish your manuscript and associated code from notebooks.  Your code is already hosted there so why not keep the manuscript website there as well?   There are [three different methods](https://quarto.org/docs/publishing/github-pages.html#publish-command) available to publish there.  We prefer the docs folder method. To use this method: 
+Github is a good choice to publish your manuscript and associated code from notebooks.  Your code is already hosted there so why not keep the manuscript website there as well?   There are [three different methods](https://quarto.org/docs/publishing/github-pages.html#publish-command) available to publish there.  We prefer the manual publish method. To use this method: 
 
 1. You need to make sure the repo is public.  Go to Settings | Danger Zone and change visibility to public.
 
-2. You need to configure GitHub to publish the website from the docs folder.  Go to Settings | Pages | Build and Deployment | Branch.  Set Branch to `main` and folder to `/docs` and save these settings.
+2. You need to configure GitHub to publish the website from the /root of the gh-pages branch.  Go to Settings | Pages | Build and Deployment | Branch.  Set Branch to `gh-pages` and folder to `/root` and save these settings. [NOTE: if you started with our lab's template, this should already be configured for you]
 
-3. In the terminal, go to the root of the folder and enter `touch .nojekyll` (this file should already be in your repo if you started from the template)
+3. To publish the manuscript, go to the terminal at the root of the study project and type `quarto publish gh-pages. 
 
-4. Render the manuscript.   This can be done from terminal using `quarto render` at the root of the quarto project  
+4. The publishing process will occassionally fail to delete temporary folders and files.  If this happens you should delete them manually.  This may include
 
-5.  Add and commit the changes and push to Github.  The associated website will update automatically.
+- `_manuscript` folder
+- `index_files` folder
+- `index.html`
 
+5.  You should commit and push any changes you made to index to qmd or your notebook qmd files.   You should also commit and  push any changes to the `_freeze` folder.
+
+NOTE: John is working on a bash script that publishes `index.qmd` and deletes these stray files.  It works in Linux but may need bash manually installed to work in Windows.  Not sure about Mac OS.
 
 
 ## Publishing Your Slideset
 
-A Github repo can only have one website associated with it. If we are using the repo for the manuscript website, we need another location to publish slidesets from talks.  We have been using [Quarto Pub](https://quartopub.com/).   You can publish there using `quarto publish quarto-pub` [filename.qmd] from the folder that contains the qmd file for the talk.   The first time you do this, you will need to verify your account and the page address.  Follow the prompts.  This info is saved in _publish.yml so that you wont need to update it the next time you publish updates to your project.
+A Github repo can only have one website associated with it. If we are using the repo for the manuscript website, we need another location to publish slidesets from talks.  We have been using [Quarto Pub](https://quartopub.com/).   You can publish there using `quarto publish quarto-pub [filename.qmd]` from the folder that contains the qmd file for the talk.   The first time you do this, you will need to verify your account and the page address.  Follow the prompts.  This info is saved in `_publish.yml` so that you wont need to update it the next time you publish updates to your project.
 
 More details are [here](https://quarto.org/docs/publishing/quarto-pub.html)
