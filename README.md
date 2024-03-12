@@ -68,3 +68,15 @@ NOTE: John is working on a bash script that publishes `index.qmd` and deletes th
 A Github repo can only have one website associated with it. If we are using the repo for the manuscript website, we need another location to publish slidesets from talks.  We have been using [Quarto Pub](https://quartopub.com/).   You can publish there using `quarto publish quarto-pub [filename.qmd]` from the folder that contains the qmd file for the talk.   The first time you do this, you will need to verify your account and the page address.  Follow the prompts.  This info is saved in `_publish.yml` so that you wont need to update it the next time you publish updates to your project.
 
 More details are [here](https://quarto.org/docs/publishing/quarto-pub.html)
+
+
+## Other notes
+
+### apaish templates
+The apaish templates were copied into this project using this terminal command: `quarto add mvuorre/quarto-apaish`.  
+
+- This allows for three pdf formats: `apaish-manuscript-typst`, `apaish-document-typst` and `apaish-journal-typst`.  One of these formats can be specified in `_quarto.yml` 
+- See the [github repo](https://github.com/mvuorre/quarto-apaish/blob/main/README.md) for more info.
+
+### typst poster template
+A typst poster template was copied into the poster1 folder using this terminal command: `quarto use template quarto-ext/typst-templates/poster`
